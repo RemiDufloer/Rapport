@@ -19,13 +19,36 @@
 
 ## Introduction
 
+Notre logiciel permet de concevoir des application android en modélisant cette application à un haut niveaux d'abstraction. Puis notre logiciel va générer le code complet de l'application en android. Il suffit après de le compiler et de l'installer sur un appareil android.
+
 #### Présentation du logiciel
+
+Notre logiciel et décomposer en 3 grande partie. La première partie est le métamodèle, ce dernier définit les principes disponibles pour notre application.
+La seconde partie est la création de modèles que ce soit de façon arborescente ou de façon graphique. On met ici à disposition plusieurs possibilitées pour que l'utilisateur conçoit l'application qui désire.
+La dernière partie elle sert à générer le code android.
 
 #### Comment contacter les auteurs
 
+- Romain Degrave :  romain.degrave.etu@univ-lille.fr
+- Rémi Dufloer : remi.dufloer.etu@univ-lille.fr 
+
 #### Version du logiciel
 
+ Version ( ici je sais pas quoi mettre )
+
 ## Manuel d installation utilisateur
+
+Pour installez notre logiciel vous allez devoir tout d'abbord installez `Android Studio` vous pouvez suivre le tutoriel suivant : https://developer.android.com/studio/install
+
+Ainsi que `Eclypse Papirus` pour cela voici un tutoriel : https://www.fil.univ-lille.fr/~dumoulin/docs/blogs/installerPapyrusPourIDMetPJE.html
+
+Une fois que cela est fait il vous faudrat cloner notre logiciel sur votre ordinateur, pour cela ouvrez `Eclypse Papirus`. 
+Mettez vous en perspective git, puis cliquer sur ** cloner un projet ** (ici verifé que cela est le bon terme) il faudrat ensuite y mettre l'addresse suivante **https://gitlab-etu.fil.univ-lille.fr/remi.dufloer.etu/degrave_dufloer_pje-a_idm.git**
+
+Une fois cela fait il faudrat importer les projet suivant : **multiActivity** , **multiActivity.edit** , **multiActivity.editor**
+Pour cela faites un clique droit sur le working tree puis sur `Importer`.
+
+Mettez vous ensuite en perspective modeling puis rendez vous 
 
 ## Manuel d utilisation
 
