@@ -43,16 +43,25 @@ Pour installez notre logiciel vous allez devoir tout d'abbord installez `Android
 Ainsi que `Eclypse Papirus` pour cela voici un tutoriel : https://www.fil.univ-lille.fr/~dumoulin/docs/blogs/installerPapyrusPourIDMetPJE.html
 
 Une fois que cela est fait il vous faudrat cloner notre logiciel sur votre ordinateur, pour cela ouvrez `Eclypse Papirus`. 
-Mettez vous en perspective git, puis cliquer sur ** cloner un projet ** (ici verifé que cela est le bon terme) il faudrat ensuite y mettre l'addresse suivante **https://gitlab-etu.fil.univ-lille.fr/remi.dufloer.etu/degrave_dufloer_pje-a_idm.git**
+Mettez vous en perspective git, puis cliquer sur **cloner un projet** (ici verifé que cela est le bon terme) il faudrat ensuite y mettre l'addresse suivante **https://gitlab-etu.fil.univ-lille.fr/remi.dufloer.etu/degrave_dufloer_pje-a_idm.git**
 
 Une fois cela fait il faudrat importer les projet suivant : **multiActivity** , **multiActivity.edit** , **multiActivity.editor**
 Pour cela faites un clique droit sur le working tree puis sur `Importer`.
 
-Mettez vous ensuite en perspective modeling puis rendez vous 
+Mettez vous ensuite en perspective modeling puis rendez vous sur le métamodèle en allant sur **multiActivity** puis **model** puis **multiActivty.aird** faite un click droit et **generate all** comme ici :
+![image](https://user-images.githubusercontent.com/92677219/209837805-f898fa43-c5c3-4ed5-aec5-2e9d1ea0b1b7.png)
+
+
+Cliquez sur la fleche verte et lancer une eclipse application comme ici : 
+![image](https://user-images.githubusercontent.com/92677219/209837747-7fd4d3e4-3e56-42f7-a41e-755d78da42ba.png)
+
+Un nouveau `Eclipse` va s'ouvrir, dans celui-ci il faudrat cloner comme precèdement le logiciel puis cette fois-ci importer tout le reste.
 
 ## Manuel d utilisation
 
 #### Les fonctionnalités implantées et leurs limitations
+
+
 
 #### Les fonctionnalités non implantées
 
