@@ -149,11 +149,48 @@ Une fois votre formulaire créer il faut mettre en place un affichage dans une a
 
 Une fois créer compléter les champs.
 
+![image](https://user-images.githubusercontent.com/92677219/209844829-5c56f755-a8ee-4dac-ba63-64e1a49de9c3.png)
+
+
 Vous avez ainsi créer un modèle, à vous de jouer avec afin de créer votre application de vos rêves.
 
-En ce qui concerne la représentation graphique
+En ce qui concerne la représentation graphique, 
+
+**ici faire des screens et expliquer comment on fait pour visualiser avec representation.aird**
+
+ce qu'on peut avoir avec une liste et une seul activité : 
+
+![image](https://user-images.githubusercontent.com/92677219/209844927-a0cb7c70-f079-4764-b6ad-9dc748d105c2.png)
+
+ce qu'on peut avoir avec plusieurs activité :
+
+![image](https://user-images.githubusercontent.com/92677219/209845003-41c7669d-e211-4bba-ba0e-d67cbd5c8a44.png)
+
+vous avez la possibilité de renomer les **Activity**, les **TextView**, les **Entity**, les **ListComponent** ainsi que les **Property** en appuyant sur leur nom.
+
+Voici toute les outils de créations qui vous sont mis à disposition.
+
+![image](https://user-images.githubusercontent.com/92677219/209845785-fdc40ce6-ad2f-47c3-a4a4-245842e345b7.png)
+
+Une fois que vous avez créer vos modèles il vous faudrat lancer la configuration de génération d'identifiant :
+
+![image](https://user-images.githubusercontent.com/92677219/209845902-8e5ee30a-9fc7-4f50-aa2f-da5211d2a6b9.png)
+
+ici on lance sur le modèle test_list
+
+puis il faut créer le projet android de même nom et l'importer dans `Eclipse` : Romain si tu peux mettre les screen de ça vu que ta android merci bg
+
+une fois cela fait il faut lancer la configuration de génération de code.
+
+![image](https://user-images.githubusercontent.com/92677219/209846231-1544c0cb-96b5-4e60-b1d1-259f6ff3f054.png)
+
+Vous venez de génerer le code android correspondant a votre application.
 
 #### Les bugs connus et comment les contourner
+
+problème si on change le nom des booléans dans l'edit, il faut pas changer de nom
+
+créer des activité à plusieurs layouts ne permet pas de génerer, la solution et de crée des activité à simple layout
 
 ## Manuel de maintenance
 
