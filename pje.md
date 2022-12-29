@@ -14,8 +14,8 @@
    1. [Le métamodèle](#le-métamodèle)
    2. [Les templates](#les-templates)
 5. [Historique du développement](#historique-du-développement)
-6. [Bilan et perspectives](#gestion-des-fichiers)
-7. [Conclusion](#demandes-de-fusion)
+6. [Bilan et perspectives](#bilan-et-perspectives)
+7. [Conclusion](#conclusion)
 
 ## Introduction
 
@@ -243,6 +243,18 @@ Par exemple voici comment est constitué le template **generateActivity.mtl**
 
 
 tout d'abord on va crée le fichier correspondant à chaque activité, pour cela on va donner le nom de l'activité au fichier. Ensuite nous allons faire les bon imports puis en utilisant le polymorphisme nous allons venir crée les méthodes en fonction des **View**.
+
+
+
+## Historique du développement
+
+
+
+## Bilan et perspectives
+
+
+
+## Conclusion 
 
 
 
