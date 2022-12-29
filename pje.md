@@ -196,4 +196,10 @@ créer des activité à plusieurs layouts ne permet pas de génerer, la solution
 
 #### Le métamodèle
 
+Voici à quoi ressemble notre métamodèle :
+
+![image](https://user-images.githubusercontent.com/92677219/209937497-8e40f4e1-1958-46c9-aa08-7fe64912c88d.png)
+
+Le point de départ du métamodèle est le concept d'**Application** en effect c'est lui qui contient ces activités. Ainsi une application contient au minimum une activité. Les **Activty** représente le concept d'activitée, ces activitée ont un nom et sont l'activitées de départ ou non. Chaque **Activity** contient en android 1 ou plusieurs **Layout** et chacun de ces **Layout** est composée de **View**, une **View** est un élément graphique avec lequel l'utilisateur peut ou non intéragir, chaque **View** ayant un identifiant, le concept de view est donc composée à un **IdentifiableEntity**. Parmis les **View** on retouve **TextView** qui est un text mis en dur dans le fond de l'activité. On retrouve aussi **PopUpTime** qui est un bouton qui affiche la date et l'heure, mais on retrouve aussi un autre bouton pop up, **PopUpMessage** ce bouton a un titre pour que l'utilisateur comprend ce que le bouton va afficher lorsque qu'il sera activé, 
+
 #### Les templates
