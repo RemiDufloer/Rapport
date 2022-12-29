@@ -221,3 +221,28 @@ Une **Entity** compose le concept de **ListComponent**, ce dernier transforme un
 #### Les templates
 
 Voici l'architecture des templates
+
+![le_main_generate (2)](https://user-images.githubusercontent.com/92677219/209941800-36e4c7c6-4c30-4dcd-ad1a-7b3902505010.png)
+
+
+
+on remarque que les templates sont divisées en 2 packages, un qui gére tout ce qui appartient au **ListComponent** et l'autre qui gérent tout le reste de l'application.
+
+(est ce qu'il faut dire tout ce qui se trouve dans chaque template ??)
+
+Le main des template et **generate.mtl** voyont comment ce dernier fonctionne
+
+![le_main_generate (3)](https://user-images.githubusercontent.com/92677219/209942297-c4f665f4-3cea-42c3-91af-3a5a5a17ec5c.png)
+
+on voit ici comme quoi ce dernier lance uniquement les autres templates, dans un certain ordre afin de généré le code de l'application. 
+
+Par exemple voici comment est constitué le template **generateActivity.mtl**
+
+![utilisation_du_polymorphisme (2)](https://user-images.githubusercontent.com/92677219/209942726-cc7d4b91-5431-4860-8532-b739a5bd62bf.png)
+
+
+
+tout d'abord on va crée le fichier correspondant à chaque activité, pour cela on va donner le nom de l'activité au fichier. Ensuite nous allons faire les bon imports puis en utilisant le polymorphisme nous allons venir crée les méthodes en fonction des **View**.
+
+
+
