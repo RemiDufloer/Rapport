@@ -1,21 +1,21 @@
 # Sommaire 
 
 1. [Introduction](#introduction)
-    1. [Présentation du logiciel](#présentation-du-logiciel)
-    2. [Comment contacter les auteurs](#comment-contacter-les-auteurs)
-    3. [Version du logiciel](#version-du-logiciel)
+   1. [Présentation du logiciel](#présentation-du-logiciel)
+   2. [Comment contacter les auteurs](#comment-contacter-les-auteurs)
+   3. [Version du logiciel](#version-du-logiciel)
 2. [Manuel d'installation utilisateur](#manuel-d-installation-utilisateur)
 3. [Manuel d'utilisation](#manuel-d-utilisation)
-    1. [Les fonctionnalités implantées et leurs limitations](#les-fonctionnalités-implantées-et-leurs-limitations)
-    2. [Les fonctionnalités non implantées](#les-fonctionnalités-non-implantées)
-    3. [Tutoriel](#tutoriel)
-    4. [Les bugs connus et comment les contourner](#les-bugs-connus-et-comment-les-contourner)
-5. [Manuel de maintenance](#manuel-de-maintenance)
-    1. [Le métamodèle](#le-métamodèle)
-    2. [Les templates](#les-templates)
-7. [Historique du développement](#historique-du-développement)
-8. [Bilan et perspectives](#gestion-des-fichiers)
-9. [Conclusion](#demandes-de-fusion)
+   1. [Les fonctionnalités implantées et leurs limitations](#les-fonctionnalités-implantées-et-leurs-limitations)
+   2. [Les fonctionnalités non implantées](#les-fonctionnalités-non-implantées)
+   3. [Tutoriel](#tutoriel)
+   4. [Les bugs connus et comment les contourner](#les-bugs-connus-et-comment-les-contourner)
+4. [Manuel de maintenance](#manuel-de-maintenance)
+   1. [Le métamodèle](#le-métamodèle)
+   2. [Les templates](#les-templates)
+5. [Historique du développement](#historique-du-développement)
+6. [Bilan et perspectives](#gestion-des-fichiers)
+7. [Conclusion](#demandes-de-fusion)
 
 ## Introduction
 
@@ -62,6 +62,7 @@ Un nouveau `Eclipse` va s'ouvrir, dans celui-ci il faudrat cloner comme precède
 #### Les fonctionnalités implantées et leurs limitations
 
 En ce qui concerne des concepts Android implémentées et pris en charge nous avont implémentées :
+
 - le concept d'Activity et leur layout
 - différente view comme par exemple celle qui fait pop up un message ou la date, ainsi que des textView.
 - le concept de Buttons (popup, newActivity)
@@ -70,7 +71,6 @@ En ce qui concerne des concepts Android implémentées et pris en charge nous av
 - Affichage d’Entity
 - Déclaration d’Entity avec des types primitifs (String, int, boolean, Double)
 - Déclaration de source de données qui est une liste java
-    
 
 #### Les fonctionnalités non implantées
 
@@ -200,6 +200,24 @@ Voici à quoi ressemble notre métamodèle :
 
 ![image](https://user-images.githubusercontent.com/92677219/209937497-8e40f4e1-1958-46c9-aa08-7fe64912c88d.png)
 
-Le point de départ du métamodèle est le concept d'**Application** en effect c'est lui qui contient ces activités. Ainsi une application contient au minimum une activité. Les **Activty** représente le concept d'activitée, ces activitée ont un nom et sont l'activitées de départ ou non. Chaque **Activity** contient en android 1 ou plusieurs **Layout** et chacun de ces **Layout** est composée de **View**, une **View** est un élément graphique avec lequel l'utilisateur peut ou non intéragir, chaque **View** ayant un identifiant, le concept de view est donc composée à un **IdentifiableEntity**. Parmis les **View** on retouve **TextView** qui est un text mis en dur dans le fond de l'activité. On retrouve aussi **PopUpTime** qui est un bouton qui affiche la date et l'heure, mais on retrouve aussi un autre bouton pop up, **PopUpMessage** ce bouton a un titre pour que l'utilisateur comprend ce que le bouton va afficher lorsque qu'il sera activé, 
+Le point de départ du métamodèle est le concept d'**Application** en effet c'est lui qui contient ces activités. Ainsi une application contient au minimum une activité.
+
+Les **Activty** représente le concept activité, ces activité ont un nom et sont l'activités de départ ou non. Chaque **Activity** contient en Android un ou plusieurs **Layout** et chacun de ces **Layout** est composée de **View**.
+
+Une **View** est un élément graphique avec lequel l'utilisateur peut ou non intéragir, chaque **View** ayant un identifiant, le concept de view est donc composée à un **IdentifiableEntity**. 
+
+Parmis les **View** on retouve **TextView** qui est un text mis en dur dans le fond de l'activité. On retrouve aussi **PopUpTime** qui est un bouton qui affiche la date et l'heure, mais on retrouve aussi un autre bouton pop up, **PopUpMessage** ce bouton a un titre pour que l'utilisateur comprend ce que le bouton va afficher lorsque qu'il sera activé, et un message qui sera affiché ainsi quand il sera activé. Ce Bouton **PopUpMessage** à aussi un nom, en effet ce nom permet de le différencier des autres popUpMessage. (revoir avec Romain ici car je suis plus sur de la fin)
+
+On retrouve aussi deux **View** un peu différente, **NewActivity** qui est un bouton qui va nous envoyer vers une autre activité, **ListView** qui va être un affichage d'une liste.
+
+Repartons du point de départ du métamodèle, une **Application** est composée d'**Entity**, cela correspond au concept d'un élément qui à un nom et est composée de propriété, par exemple un Contact est une entity qui est composée d'un nom, d'un prénom, d'un âge, et d'un numéro de téléphone. 
+
+Une propriété est représenté par **Property**, chaque property à un nom, comme prénom par exemple, de plus chaque **Property** est d'un type, les types disponible sont dans **PropertyType**.
+
+Une **Entity** compose le concept de **ListComponent**, ce dernier transforme une entité en liste, est sauvegarde les information dans une ou plusieurs **DataSource**, ici les **DataSource** sont tout des **ListJava**. Les **ListComponent** donne la possibilitées ou non à l'utilisateur de crée un nouveaux contact par exemple ou bien de le supprimer.
+
+
 
 #### Les templates
+
+Voici l'architecture des templates
